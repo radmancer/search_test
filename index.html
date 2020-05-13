@@ -1,46 +1,37 @@
 <html>
     <head>
-        <!--Written and Directed By James Scott McDowell-->
-        <title>Singularity</title>
-        <link rel="stylesheet" href="css/radlab.css">
-        <link rel="stylesheet" href="css/w3.css">
-        <link rel="stylesheet" href="css/modal.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/index.css">
-        <meta name="google-site-verification" content="RW6yUQ8Cf6DKRiYOzA0oGeoYUM7dR9RBh7OxPGTnsyc" />
+        <script>
+            var firstNames = ["John", "Smith", "Elen", "Elexa", "Farhan", "Faith", "Yasmin", "Ashley", "Daeun", "Nekia", "Olumayowa", "Perpetual", "Samantha", "Latasha", "John", "Dasam", "Jhosep", "Jeala", "Taylor", "Kelly", "Adam", "Jayla", "Dakoda", "Allison", "Christina", "Cassidy", "Christopher", "Christopher", "Jaycie", "Chung-Yon", "Shayla", "Elizabeth", "Hanna", "Jimshad", "Kaylah", "Katelyn", "Lisa", "Monica", "Kelly", "Kripa", "Rebekah", "Savannah", "Phillip", "Victoria", "Morgan", "Kendra", "Zachary", "Elizabeth", "Alexandra", "Juliana", "Iain Noel", "Hemasree", "Kent Martine", "Lea", "Amy", "Billy", "Emily", "Zachary", "Megan", "Brianna", "Zachary", "Kathleen", "Madison", "MaCayla", "Jason", "Hayley", "Natalie", "Sebastian", "Hannah", "Stephanie", "Ali", "Carolyn", "Honey", "Jahara", "Jenna", "Brandon", "Amir", "Latonya", "Teandra", "Thomas", "Marissa", "Wesam", "Jisu", "Bradley", "Brendon", "Brenna", "Richard", "Andrew", "Tharidu", "Natalie", "Ping Ping", "Natalie", "Jonathan", "Sarah", "Carter", "Brian", "Zshonel", "Margaret", "Aaron Cedric", "Matilda", "Cynthia", "Andrei", "Eric", "Bryan", "M. Haroon", "Karen", "Aaryan", "Brooke", "Lindsay", "Krista", "Erin", "Terisa", "Theodora", "Andrew", "Kristina", "Lauryn", "Abes", "Andrew", "Kelly", "Nerone Kiyoshi Omari", "Abigail", "Jack", "Kyla", "Ahmad", "Sean", "Walter", "Evan", "Raul", "Nicholas", "Hannah", "Lydia", "Michelle", "Raya", "Rochan", "Serena", "Joshua", "Daniel", "Daniel", "Bridget", "Jacob", "Kelsey", "Miranda", "Kelly", "Kelsey", "Aditi", "Maymona", "Katie", "Jacques", "Alexis", "Lauren", "David", "Troy", "Ali", "Dara", "Janessa", "Julianna", "Jakob", "Shevokya", "Julie", "Brianna", "Melissa", "Riley", "Martin", "Lauren", "Lavinia", "Carson", "Roxanne", "Akshara Sree", "Chris", "Nisha", "Romelle", "Robert", "Christopher", "Katelyn", "Kendra", "Hsiang-Chun", "Rohan", "Jodi", "Catherine", "Geda", "Jared", "Nolan", "Alec", "Ronston", "Quiana", "Thomas", "Sandra", "Vicky", "Celine", "Arianne", "Wilton", "Samuel", "Michaela", "Victoria", "Devon", "Jason", "Ruixue", "Brian", "Gregory", "Bria", "Niomy", "Victor", "Laura", "Karam", "Michael", "Emitis", "Sarah", "Deanna", "Jaime", "Michael", "Alexander", "Michael", "Viraj", "Briana", "Vishal", "Maria", "Grant", "Donald", "Don", "Brianna", "Julianne", "Emily", "Caroline", "Andrew", "Dustin", "Jessica", "Katherine", "Saad", "Jennifer", "Anita", "Michael", "Madison", "Amanda", "Kristen", "Robert", "Michelle", "Cristina", "Lydia", "Michael", "Joanne", "David", "Michele", "Steffanie", "Paul", "Madeleine", "Alex", "Melicia", "Shakira", "Victoria", "Alexis", "Megan", "Madeline", "Edward", "Rachel", "Stephanie", "Christine", "Benjamin", "Deepak", "Rania", "Alyssandra", "Amber", "Teonna", "Antoinette", "Atheena", "Austin", "Misky", "David", "Vraj", "Hannah"];
+            var lastNames = ["Smith", "John", "Mussie", "Walker", "Bana", "Rutz", "John", "Givhens", "Jeong", "Walker", "Omotoyinbo", "Taylor", "Yates", "Winston", "Dunn", "Jeong", "Huaromo", "Youssefi", "Edwards", "Bryant", "Vareika", "Freeman", "Farrington", "Brown", "Ferren", "Hilton", "Zazueta", "Walsh", "Haymore", "Lin", "Hayward-Lundy", "Fitch", "Hutter", "Farooque-Wooden", "Duplain", "Cuthbert", "Rupe", "Ethirajan", "Conatser", "Ahuja", "Jones", "Corbin", "Ball", "Collie", "Shelton", "Walker", "Yorke", "Lilliston", "Leming", "Castillo", "Encarnacion", "Yeluru", "Mok", "Mims", "Maestas", "Peng", "Payne", "Harrison", "Ralston", "Butler", "Kaplan", "Roscoe", "Ahnafield", "Servais", "Stalling", "Stillings", "Stahr", "Hickmann", "Seasholtz", "DuVall", "Alshayhan", "Blaker", "Tavanasefat", "Davis", "Caroff", "Euker", "Hasani", "Hampton", "James", "Moore", "Reilly", "Albayati", "Shin", "Cundiff", "Pace", "Cook", "Pellizzari", "Wickersham", "Gunawardena", "Simon", "Jiang", "Amos", "Parker", "Phillips", "Berry", "Dykstra", "Auma", "Williams", "Llanes", "Francis", "Ong", "Savu", "Gullborg", "Graham", "Malak", "Rominger", "Bhandari", "Conlin", "Munsterman", "LaBelle", "An", "Yiin", "O'Leary", "Jones", "Rofail", "Brown", "Bautista Neughebauer", "Adams", "Wirka", "Douglas", "Williams", "Capra", "Bass", "Al-Husseini", "Varga", "Odipo", "Leung", "Soto", "Jennings", "Bellavance", "Perez-Reyes", "Hill", "Iqbal", "Ramesh", "Pu", "Payne", "Sausen", "Strock", "Mazzoni", "Whitley", "Voss", "Hept", "Wise", "Davenport", "Gore", "Dulli", "Lanier", "Fair", "Poindexter", "Roten", "Brodnik", "Williams", "Alshayhan", "Wissinger", "Hill", "Remo", "Neilson", "Benton", "Vu", "Miller", "Estrada", "Demos", "Delgado", "Padilla", "Rizvi", "Pokorny", "Rose", "Challa", "Durant", "Dabhi", "Weatherspoon", "Yotz", "Koffman", "Rouse", "Russell", "Yen", "Dod", "Williams", "Read", "Tola", "LeBron", "Martin", "McCranie", "Jackman", "Tolbert", "Fields", "Suarez-Criollo", "Lam", "Marlin Andrews", "Bexfield", "Fidelis-Nwaefulu", "Holstege", "Curry", "Dahl", "Clark", "Bard", "Zhang", "Nguyen", "Snigur", "Hall", "Rosado", "Yu", "Killeen", "Obeid", "Eason", "Ashayeri", "Kostinas", "Belos", "Davis", "Gill", "Maddock", "Karanja", "Sharma", "Grier", "Aggroia", "Meccico", "Fabrizio", "Clark", "Atreides", "Armentrout", "Episcopo", "Kisch", "Trimmer", "Howell", "Platter", "Parker", "Becker", "Jafri", "Hesse", "Osabutey", "Stetzer", "Barber", "David", "Askew", "Velasquez", "Shin", "David", "Lukomski", "Yacoub", "Kanellos", "Soliman", "Nsianya", "Altenbern", "Dumitrescu", "Miles", "Goggin", "Clarke-Williams", "Young", "Hurst", "Antonucci", "Foust", "Pence", "Si", "Siegrist", "Bennett", "Li", "Chilampath", "Melwani", "Aggawi", "Malinish", "Silva", "Sharpe", "Huryk", "Estrada", "Adkins", "Sharif", "Persaud", "Patel", "James"];
+            var frames = ["0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69","70","71","72","73","74","75","76","77","78","79","80","81","82","83","84","85","86","87","88","89","90","91","92","93","94","95","96","97","98","99","100","101","102","103","104","105","106","107","108","109","110","111","112","113","114","115","116","117","118","119","120","121","122","123","124","125","126","127","128","129","130","131","132","133","134","135","136","137","138","139","140","141","142","143","144","145","146","147","148","149","150","151","152","153","154","155","156","157","158","159","160","161","162","163","164","165","166","167","168","169","170","171","172","173","174","175","176","177","178","179","180","181","182","183","184","185","186","187","188","189","190","191","192","193","194","195","196","197","198","199","200","201","202","203","204","205","206","207","208","209","210","211","212","213","214","215","216","217","218","219","220","221","222","223","224","225","226","227","228","229","230","231","232","233","234","235","236","237","238","239","240","241","242","243","244","245","246","247","248","249","250","251","252","253","254","255","256","257","258","259","260","261","262","263","264","265","266","267","268"];
+            function findGrad(){
+                var firstNameMatches = [];
+                var lastNameMatches = [];
+                var frameMatches = [];
+
+                var searchValue = document.getElementById("searchBox").value;
+                var regex = new RegExp("^" + searchValue, "i");
+
+                for(var i = 0; i < frames.length; i++){
+                    var firstNameMatch = firstNames[i].match(regex);
+                    var lastNameMatch = lastNames[i].match(regex);
+                    if(firstNameMatch != null){
+                        document.getElementById("output").innerHTML += firstNames[i] + " ";
+                        document.getElementById("output").innerHTML += lastNames[i] + "; ";
+                        document.getElementById("output").innerHTML += "[link]:" + frames[i] + "\n";
+                    }
+                    else if(lastNameMatch != null){
+                        document.getElementById("output").innerHTML += firstNames[i] + " ";
+                        document.getElementById("output").innerHTML += lastNames[i] + "; ";
+                        document.getElementById("output").innerHTML += "[link]:" + frames[i] + "\n";
+                    }
+                }
+            }
+        </script>
     </head>
-    <body class="indexPageBody">
-        <div class="indexPageLayoutGrid">
-            <div class="logoGraphic w3-spin"></div>
-            <div class="logoText centerXY noselect"><span>singularity</span></div>
-            <div class="legalesePart1 centerXY noselect" style="font-family:gothamRoundedLight;color:white">By tapping "okay fine" you hitherforth agree with our</div>
-            <div class="legalesePart2 centerXY noselect" style="font-family:gothamRoundedLight;color:white">
-                <div onclick="showModal('genericModal');" style="text-decoration:underline;">Terms of Service</div>&nbsp;and&nbsp;<a href="https://youtu.be/OMOGaugKpzs?t=15">"Privacy" Policy</a>.
-            </div>
-            <div class="okayFine centerXY largeRadius noselect" onclick="location.href = 'singularity.html';"><span>OKAY FINE</span></div>
-            <div class="loginWith centerXY largeRadius noselect" onclick="location.href = 'singularity.html';"><span>LOG IN WITH SOCIAL SECURITY NUMBER</span></div>
-            <div class="explanation centerXY noselect"><span><a href="https://youtu.be/_wWkAHOph6A">Watch the commercial</a></span></div>
-            <div class="confidentiality centerXY noselect" style="font-family:gothamRoundedLight;color:white">(We won't tell anyone you're doing this.)</div>
-        </div>
-        <div id="genericModal" class="genericModal">
-            <div class="termsAndConditionsText smallRadius">Welcome to the nadir of searching for the basic human needs of
-                love, and understanding. Like a Burger King is to your nutritional health; so too is online dating to
-                your romantic happiness. Surely, one may overcome the expenditures of one’s own time,
-                money and mental energy, by, as they say: “putting yourself out there.” But by the gods! Who has time for
-                THAT guff? So let us begin your thumb-sliding journey into the abject HORROR of the personalizes of men on
-                the internet that you will no doubt encounter.
-            </div>
-            <div class="modalExit centerXY" onclick="document.getElementById('genericModal').style.visibility='hidden';">
-                <div class="closeButton">&#10007;</div>
-            </div>
-            <div class="termsTitle">THE TERMS</div>
-        </div>
+    <body>
+        <input id="searchBox" type="text">
+        <input type="button" value="find grad" onclick="findGrad();">
+        <textarea id="output"></textarea>
     </body>
-    <script src="js/modal.js"></script>
-    <script>
-        var osType = getMobileOperatingSystem();
-        if(osType != "iOS" && osType != "Android"){
-            window.location = "mobile_only.html";
-        }
-    </script>
 </html>
